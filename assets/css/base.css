@@ -1,0 +1,49 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /* Mặc định trang web fone-size 16px nên nếu cho 100% thì 1 rem = 16px
+    khi cho fone-size là 62.5% thì 1rem = 10px 1.6 rem = 16px sẽ dễ dùng hơn */
+    font-size: 62.5%;
+    /* box-sizing: border-box; */
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    /* sans-serif là kiểu chữ bỏ dấu gạch ở dưới chữ có tác dụng
+    khi Roboto chưa tải được thì nó sẽ thay thế đến khi Roboto đc tải */
+}
+
+.grid{
+    width: 1450px;
+    max-width: 100%;
+    /* với màn hình kích có kích thước lớn hơn 1450px thì nó cũng chỉ 
+    ở 1450px nhưng với màn hình nhỏ hơn 1450px thì width nó sẽ giảm xuống
+    bằng với kích thước màn hình nhỏ hơn 1200 */
+    margin: 0 auto;
+}
+.grid__full-width{
+    width: 100%;
+    /* trong trường hợp không thích sử dụng width = 1200 thì add 
+    class này vô */
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+}

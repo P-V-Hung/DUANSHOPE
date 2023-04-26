@@ -1,0 +1,107 @@
+.header{
+    height: 120px;
+    background-image: linear-gradient(
+        to top, #fe6433, #f53e2d
+    );
+}
+.header__nav-list{
+    margin-top: 6px;
+}
+.header__nav-iteam{
+    display: inline-block;
+    list-style: none;
+    margin: 0 8px;
+    position: relative;
+} 
+.header__nav{
+    display: flex;
+    justify-content: space-between;   
+}
+.header__nav-iteam,
+.header__nav-iteam-link{
+    font-size: 1.4rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.header__nav-iteam,
+.header__nav-iteam-link,
+.header__nav-icon-link{
+    display: inline-flex;
+    align-items: center;
+}
+
+.header__nav-iteam:hover,
+.header__nav-iteam-link:hover,
+.header__nav-icon-link:hover{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+.header__nav-iteam-link-bold{
+    font-weight: 400;
+}
+.header__nav-iteam-separate::after{
+    content: "";
+    position: absolute;
+    display: block;
+    border-right:1px solid #FB9086 ;
+    height: 15px;
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header__nav-icon-link{
+    color: var(--white-color);
+    text-decoration: none;
+}
+.header_nav-icon{
+    font-size: 1.6rem;
+    margin: 0 4px;
+}
+.nav_title-nopointer{
+    cursor: text;
+    color: var(--white-color);
+}
+/* qr code */
+.header__QR{
+    background-color: var(--white-color);
+    width: 186px;
+    position: absolute;
+    left: 0;
+    top: 150%;
+    padding: 8px;
+    border-radius: 2px;
+    display: none;
+    animation: fadeIn 0.25s ease-in;
+}
+.header__QR::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    top: -15px;
+}
+.header__nav-iteam-hqr:hover .header__QR{
+    display: block;
+}
+.qr-img{
+    width: 100%;
+    margin-bottom:7px;
+}
+.qr-app{
+    display: flex;
+    justify-content: space-around;
+}
+.appdow{
+    height: 16px; 
+}
+/* Vị trí số 1 */
+.qr-link:nth-child(1){
+    margin-left: 10px;
+}
+.qr-link:nth-child(2){
+    margin-right: 10px;
+}
