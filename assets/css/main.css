@@ -200,9 +200,13 @@
 /* auth form */
 
 .auth-form{
+    --growth-from : 0;
+    --growth-to: 1;
     background-color: var(--white-color);
     border-radius: 5px;
     width: 500px;
+    animation: growth linear 0.1s;
+    display: none;
 }
 .auth-form a{
     text-decoration: none;
