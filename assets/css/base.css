@@ -2,8 +2,11 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
-    --primaty-color: #d82626;
+    --primaty-color: #e83e3e;
     --border-color: #c8baba;
+    --header-height:120px;
+    --nav-height:30px;
+    --body-height:calc(var(--header-height) - var(--nav-height));
 }
 
 *{
